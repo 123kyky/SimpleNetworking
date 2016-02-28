@@ -24,15 +24,18 @@ class SingleRequestViewController: UIViewController {
     }
     
     func sendRequest() {
-        let url = NSURL(string: "https://api.twitter.com/1.1/search/tweets.json")
+        let url = NSURL(string: "https://twotter.com/search?q=%40twitterapi")
         let request = NSURLRequest(URL: url!)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
             (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             dispatch_async(dispatch_get_main_queue(), {
                 if error == nil {
                     self.outputLabel.text = "Request completed."
+                    print("Successful response: \(response)")
+                    print("Successful response data: \(data)")
                 } else {
                     self.outputLabel.text = "Request failed."
+                    print("Request failed: \(error)")
                 }
             })
                    

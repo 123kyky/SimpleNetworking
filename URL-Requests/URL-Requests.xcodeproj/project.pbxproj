@@ -409,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "floundertech.test.URL-Requests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -420,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "floundertech.test.URL-Requests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 			};
 			name = Release;
 		};
@@ -490,6 +492,7 @@
 				273DA1D71C7BF5CB0075A5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		273DA1D81C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-RequestsTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +501,7 @@
 				273DA1DA1C7BF5CB0075A5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		273DA1DB1C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-RequestsUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +510,7 @@
 				273DA1DD1C7BF5CB0075A5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
