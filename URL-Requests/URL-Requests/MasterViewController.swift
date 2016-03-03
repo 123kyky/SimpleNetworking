@@ -31,28 +31,11 @@ class MasterViewController: UITableViewController {
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                var viewController: UIViewController?
-                
-                switch (indexPath.row) {
-                case 0:
-                    viewController = SingleRequestViewController()
-                case 1:
-                    viewController = SingleRequestViewController()
-                case 2:
-                    viewController = SingleRequestViewController()
-                case 3:
-                    viewController = SingleRequestViewController()
-                default:
-                    assert(viewController != nil, "View Controller was not set")
-                }
-                
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController
-                controller!.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller!.navigationItem.leftItemsSupplementBackButton = true
-                controller!.title = objects[indexPath.row]
-            }
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController
+            controller!.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller!.navigationItem.leftItemsSupplementBackButton = true
+            controller!.title = objects[indexPath.row]
         }
     }
 
@@ -72,10 +55,16 @@ class MasterViewController: UITableViewController {
         
         return cell
     }
-
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.performSegueWithIdentifier("singleRequest", sender: self)
+        case 1:
+            self.performSegueWithIdentifier("multipleRequest", sender: self)
+        default:
+            break
+        }
     }
 
 }

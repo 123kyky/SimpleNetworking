@@ -52,9 +52,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="E3W-Qj-AEg" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="68U-53-pod"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="QAs-jY-RyO" secondAttribute="bottom" constant="20" id="C3V-2E-K22"/>
                             <constraint firstItem="QAs-jY-RyO" firstAttribute="centerX" secondItem="E3W-Qj-AEg" secondAttribute="centerX" id="ErH-lF-QXO"/>
                             <constraint firstItem="E3W-Qj-AEg" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="QXU-lT-ZJj"/>
-                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="QAs-jY-RyO" secondAttribute="bottom" constant="20" id="Srs-fb-TZ3"/>
                             <constraint firstItem="QAs-jY-RyO" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="254.5" id="Z5p-H7-esi"/>
                         </constraints>
                     </view>
@@ -68,6 +68,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="709" y="129"/>
+        </scene>
+        <!--Multiple Requests-->
+        <scene sceneID="WGB-0y-2Jv">
+            <objects>
+                <viewController storyboardIdentifier="MultipleRequestViewController" title="Multiple Requests" id="Qdp-8p-MXg" customClass="MultipleRequestViewController" customModule="URL_Requests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zIq-FK-W9e"/>
+                        <viewControllerLayoutGuide type="bottom" id="R8O-Cd-tiH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DBf-L0-DyU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lc-9j-BHT">
+                                <rect key="frame" x="239" y="285" width="123" height="30"/>
+                                <state key="normal" title="Multiple Requests"/>
+                                <connections>
+                                    <action selector="requestButtonTapped:" destination="Qdp-8p-MXg" eventType="touchUpInside" id="n30-bJ-a1V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7x-57-OLv">
+                                <rect key="frame" x="157" y="529" width="287" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="KwE-Of-SwE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4lc-9j-BHT" firstAttribute="centerX" secondItem="DBf-L0-DyU" secondAttribute="centerX" id="8I1-SS-TiV"/>
+                            <constraint firstItem="R8O-Cd-tiH" firstAttribute="top" secondItem="l7x-57-OLv" secondAttribute="bottom" constant="20" id="O7l-dx-0oW"/>
+                            <constraint firstItem="l7x-57-OLv" firstAttribute="centerY" secondItem="DBf-L0-DyU" secondAttribute="centerY" constant="254.5" id="Q1R-h6-Jm0"/>
+                            <constraint firstItem="4lc-9j-BHT" firstAttribute="centerY" secondItem="DBf-L0-DyU" secondAttribute="centerY" id="eGv-xv-Ubi"/>
+                            <constraint firstItem="l7x-57-OLv" firstAttribute="centerX" secondItem="4lc-9j-BHT" secondAttribute="centerX" id="xez-gi-Uqw"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="URL Request" id="bRH-cH-OMd"/>
+                    <connections>
+                        <outlet property="outputLabel" destination="l7x-57-OLv" id="4Ye-Mp-IdL"/>
+                        <outlet property="requestButton" destination="4lc-9j-BHT" id="lpe-6r-22C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Szs-KK-VhQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1389" y="129"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -96,11 +145,11 @@
                                 <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -109,9 +158,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -121,6 +167,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Requests" id="Zdf-7t-Un8"/>
+                    <connections>
+                        <segue destination="Awh-u6-GSB" kind="showDetail" identifier="multipleRequest" id="Q3j-Kj-2Me"/>
+                        <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="singleRequest" id="vEo-Ve-X5g"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,8 +191,23 @@
             </objects>
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qeq-Zr-vVl">
+            <objects>
+                <navigationController id="Awh-u6-GSB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BqA-Gh-WnM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qdp-8p-MXg" kind="relationship" relationship="rootViewController" id="9eD-2i-uWh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtU-Dx-H5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1407" y="-630"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="vEo-Ve-X5g"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,31 +1,23 @@
 //
-//  SingleRequestViewController.swift
+//  MultipleRequestViewController.swift
 //  URL-Requests
 //
-//  Created by Kyle Roberts on 2/22/16.
+//  Created by Kyle Roberts on 3/2/16.
 //  Copyright © 2016 com.floundertech. All rights reserved.
 //
 
 import UIKit
 
-class SingleRequestViewController: UIViewController {
+class MultipleRequestViewController: UIViewController {
     @IBOutlet weak var requestButton: UIButton!
     @IBOutlet weak var outputLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        outputLabel.text = "Request not started."
-    }
 
     @IBAction func requestButtonTapped(sender: AnyObject) {
-        outputLabel.text = "Request started."
-        sendRequest()
-    }
-    
-    func sendRequest() {
-        let url = NSURL(string: "https://api.twitter.com/1.1/search/tweets.json?q=%40twitterapi")
-        let request = NSURLRequest(URL: url!)
+        let url = NSURL(string: "https://api.twitter.com/oauth2/token")
+        let request = NSMutableURLRequest(URL: url!)
+        request.setValue("Base " + self.consumerKey(), forHTTPHeaderField: "Authorization")
+        request.setValue("application/x-www-form-urlencoded;charset=UTF-8", forHTTPHeaderField: "Content-Type")
+        request.HTTPBody = NSData(base64EncodedString: "grant_type=client_credentials", options: .IgnoreUnknownCharacters)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
             (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             dispatch_async(dispatch_get_main_queue(), {
@@ -42,5 +34,14 @@ class SingleRequestViewController: UIViewController {
         })
         
         task.resume()
+    }
+    
+    func consumerKey() -> String {
+        let consumerKey = "FmvyKuNsVaxTLog8wHTAIfn5y"
+        let secret = "vjfkanLAQ7ojpIE5k7iEAsfLAoMVSRTOQnahMbF7Iw42t1zZoZ"
+        let string = consumerKey + ":" + secret
+        let data = string.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        return data!.base64EncodedStringWithOptions([])
     }
 }
