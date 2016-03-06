@@ -15,12 +15,12 @@ class SingleRequestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        outputLabel.text = "Request not started."
+        self.outputLabel.text = "Waiting..."
     }
 
     @IBAction func requestButtonTapped(sender: AnyObject) {
-        outputLabel.text = "Request started."
-        sendRequest()
+        self.outputLabel.text = "Request started."
+        self.sendRequest()
     }
     
     func sendRequest() {
