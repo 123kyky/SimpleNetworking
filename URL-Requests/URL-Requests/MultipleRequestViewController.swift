@@ -77,7 +77,6 @@ class MultipleRequestViewController: UIViewController {
                     print("Successful response: \(response)")
                     print("Successful response data: \(data)")
                     
-                    
                     do {
                         let json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
                         print("Successful response data: \(json)")

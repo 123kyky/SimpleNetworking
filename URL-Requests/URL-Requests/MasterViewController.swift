@@ -10,22 +10,11 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var objects = ["Single Request", "Multiple Requests", "Handling a Response", "Handling a Failure"]
-
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    var objects = ["Single Request", "Multiple Requests", "Factory"]
 
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Segues
@@ -62,6 +51,8 @@ class MasterViewController: UITableViewController {
             self.performSegueWithIdentifier("singleRequest", sender: self)
         case 1:
             self.performSegueWithIdentifier("multipleRequest", sender: self)
+        case 2:
+            self.performSegueWithIdentifier("factory", sender: self)
         default:
             break
         }
