@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273DA1AA1C7BF5CB0075A5D6"
-               BuildableName = "URL-Requests.app"
-               BlueprintName = "URL-Requests"
-               ReferencedContainer = "container:URL-Requests.xcodeproj">
+               BuildableName = "SimpleNetworking.app"
+               BlueprintName = "SimpleNetworking"
+               ReferencedContainer = "container:SimpleNetworking.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273DA1C01C7BF5CB0075A5D6"
-               BuildableName = "URL-RequestsTests.xctest"
-               BlueprintName = "URL-RequestsTests"
-               ReferencedContainer = "container:URL-Requests.xcodeproj">
+               BuildableName = "SimpleNetworkingTest.xctest"
+               BlueprintName = "SimpleNetworkingTest"
+               ReferencedContainer = "container:SimpleNetworking.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273DA1CB1C7BF5CB0075A5D6"
-               BuildableName = "URL-RequestsUITests.xctest"
-               BlueprintName = "URL-RequestsUITests"
-               ReferencedContainer = "container:URL-Requests.xcodeproj">
+               BuildableName = "SimpleNetworkingUITests.xctest"
+               BlueprintName = "SimpleNetworkingUITests"
+               ReferencedContainer = "container:SimpleNetworking.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "273DA1AA1C7BF5CB0075A5D6"
-            BuildableName = "URL-Requests.app"
-            BlueprintName = "URL-Requests"
-            ReferencedContainer = "container:URL-Requests.xcodeproj">
+            BuildableName = "SimpleNetworking.app"
+            BlueprintName = "SimpleNetworking"
+            ReferencedContainer = "container:SimpleNetworking.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "273DA1AA1C7BF5CB0075A5D6"
-            BuildableName = "URL-Requests.app"
-            BlueprintName = "URL-Requests"
-            ReferencedContainer = "container:URL-Requests.xcodeproj">
+            BuildableName = "SimpleNetworking.app"
+            BlueprintName = "SimpleNetworking"
+            ReferencedContainer = "container:SimpleNetworking.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "273DA1AA1C7BF5CB0075A5D6"
-            BuildableName = "URL-Requests.app"
-            BlueprintName = "URL-Requests"
-            ReferencedContainer = "container:URL-Requests.xcodeproj">
+            BuildableName = "SimpleNetworking.app"
+            BlueprintName = "SimpleNetworking"
+            ReferencedContainer = "container:SimpleNetworking.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

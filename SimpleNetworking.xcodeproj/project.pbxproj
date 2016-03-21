@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		273DA1AF1C7BF5CB0075A5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DA1AE1C7BF5CB0075A5D6 /* AppDelegate.swift */; };
-		273DA1B11C7BF5CB0075A5D6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DA1B01C7BF5CB0075A5D6 /* MasterViewController.swift */; };
-		273DA1B61C7BF5CB0075A5D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273DA1B41C7BF5CB0075A5D6 /* Main.storyboard */; };
-		273DA1B81C7BF5CB0075A5D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273DA1B71C7BF5CB0075A5D6 /* Assets.xcassets */; };
-		273DA1BB1C7BF5CB0075A5D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273DA1B91C7BF5CB0075A5D6 /* LaunchScreen.storyboard */; };
 		273DA1C61C7BF5CB0075A5D6 /* URL_RequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DA1C51C7BF5CB0075A5D6 /* URL_RequestsTests.swift */; };
 		273DA1D11C7BF5CB0075A5D6 /* URL_RequestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DA1D01C7BF5CB0075A5D6 /* URL_RequestsUITests.swift */; };
-		273DA1E11C7BF8BD0075A5D6 /* SingleRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DA1E01C7BF8BD0075A5D6 /* SingleRequestViewController.swift */; };
-		277AD20A1C9F17B500196286 /* SimpleNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277AD2091C9F17B500196286 /* SimpleNetworkingManager.swift */; };
-		277AD20C1C9F19D500196286 /* FactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277AD20B1C9F19D500196286 /* FactoryViewController.swift */; };
-		278AFB511C87D38700358697 /* MultipleRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278AFB501C87D38700358697 /* MultipleRequestViewController.swift */; };
+		710D36E21CA0258A006CFFBF /* SimpleNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D36D41CA0258A006CFFBF /* SimpleNetworkingManager.swift */; };
+		710D36E31CA0258A006CFFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D36D61CA0258A006CFFBF /* AppDelegate.swift */; };
+		710D36E41CA0258A006CFFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710D36D71CA0258A006CFFBF /* Assets.xcassets */; };
+		710D36E51CA0258A006CFFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710D36D81CA0258A006CFFBF /* LaunchScreen.storyboard */; };
+		710D36E61CA0258A006CFFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710D36DA1CA0258A006CFFBF /* Main.storyboard */; };
+		710D36E81CA0258A006CFFBF /* FactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D36DE1CA0258A006CFFBF /* FactoryViewController.swift */; };
+		710D36E91CA0258A006CFFBF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D36DF1CA0258A006CFFBF /* MasterViewController.swift */; };
+		710D36EA1CA0258A006CFFBF /* MultipleRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D36E01CA0258A006CFFBF /* MultipleRequestViewController.swift */; };
+		710D36EB1CA0258A006CFFBF /* SingleRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D36E11CA0258A006CFFBF /* SingleRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,23 +38,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		273DA1AB1C7BF5CB0075A5D6 /* URL-Requests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URL-Requests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		273DA1AE1C7BF5CB0075A5D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		273DA1B01C7BF5CB0075A5D6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		273DA1B51C7BF5CB0075A5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		273DA1B71C7BF5CB0075A5D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		273DA1BA1C7BF5CB0075A5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		273DA1BC1C7BF5CB0075A5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		273DA1C11C7BF5CB0075A5D6 /* URL-RequestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URL-RequestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273DA1AB1C7BF5CB0075A5D6 /* SimpleNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		273DA1C11C7BF5CB0075A5D6 /* SimpleNetworkingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		273DA1C51C7BF5CB0075A5D6 /* URL_RequestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL_RequestsTests.swift; sourceTree = "<group>"; };
 		273DA1C71C7BF5CB0075A5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		273DA1CC1C7BF5CB0075A5D6 /* URL-RequestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URL-RequestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273DA1CC1C7BF5CB0075A5D6 /* SimpleNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		273DA1D01C7BF5CB0075A5D6 /* URL_RequestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL_RequestsUITests.swift; sourceTree = "<group>"; };
 		273DA1D21C7BF5CB0075A5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		273DA1E01C7BF8BD0075A5D6 /* SingleRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRequestViewController.swift; sourceTree = "<group>"; };
-		277AD2091C9F17B500196286 /* SimpleNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingManager.swift; sourceTree = "<group>"; };
-		277AD20B1C9F19D500196286 /* FactoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryViewController.swift; sourceTree = "<group>"; };
-		278AFB501C87D38700358697 /* MultipleRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleRequestViewController.swift; sourceTree = "<group>"; };
+		710D36D41CA0258A006CFFBF /* SimpleNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingManager.swift; sourceTree = "<group>"; };
+		710D36D61CA0258A006CFFBF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		710D36D71CA0258A006CFFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		710D36D91CA0258A006CFFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		710D36DB1CA0258A006CFFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		710D36DC1CA0258A006CFFBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		710D36DE1CA0258A006CFFBF /* FactoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryViewController.swift; sourceTree = "<group>"; };
+		710D36DF1CA0258A006CFFBF /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		710D36E01CA0258A006CFFBF /* MultipleRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleRequestViewController.swift; sourceTree = "<group>"; };
+		710D36E11CA0258A006CFFBF /* SingleRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +85,9 @@
 		273DA1A21C7BF5CB0075A5D6 = {
 			isa = PBXGroup;
 			children = (
-				273DA1AD1C7BF5CB0075A5D6 /* URL-Requests */,
-				273DA1C41C7BF5CB0075A5D6 /* URL-RequestsTests */,
-				273DA1CF1C7BF5CB0075A5D6 /* URL-RequestsUITests */,
+				273DA1AD1C7BF5CB0075A5D6 /* SimpleNetworking */,
+				273DA1C41C7BF5CB0075A5D6 /* SimpleNetworkingTests */,
+				273DA1CF1C7BF5CB0075A5D6 /* SimpleNetworkingUITests */,
 				273DA1AC1C7BF5CB0075A5D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,54 +95,84 @@
 		273DA1AC1C7BF5CB0075A5D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				273DA1AB1C7BF5CB0075A5D6 /* URL-Requests.app */,
-				273DA1C11C7BF5CB0075A5D6 /* URL-RequestsTests.xctest */,
-				273DA1CC1C7BF5CB0075A5D6 /* URL-RequestsUITests.xctest */,
+				273DA1AB1C7BF5CB0075A5D6 /* SimpleNetworking.app */,
+				273DA1C11C7BF5CB0075A5D6 /* SimpleNetworkingTest.xctest */,
+				273DA1CC1C7BF5CB0075A5D6 /* SimpleNetworkingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		273DA1AD1C7BF5CB0075A5D6 /* URL-Requests */ = {
+		273DA1AD1C7BF5CB0075A5D6 /* SimpleNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				273DA1AE1C7BF5CB0075A5D6 /* AppDelegate.swift */,
-				273DA1B01C7BF5CB0075A5D6 /* MasterViewController.swift */,
-				273DA1E01C7BF8BD0075A5D6 /* SingleRequestViewController.swift */,
-				278AFB501C87D38700358697 /* MultipleRequestViewController.swift */,
-				277AD20B1C9F19D500196286 /* FactoryViewController.swift */,
-				273DA1B41C7BF5CB0075A5D6 /* Main.storyboard */,
-				273DA1B71C7BF5CB0075A5D6 /* Assets.xcassets */,
-				273DA1B91C7BF5CB0075A5D6 /* LaunchScreen.storyboard */,
-				273DA1BC1C7BF5CB0075A5D6 /* Info.plist */,
-				277AD2091C9F17B500196286 /* SimpleNetworkingManager.swift */,
+				710D36D31CA0258A006CFFBF /* Manager */,
+				710D36D51CA0258A006CFFBF /* Resources */,
+				710D36DD1CA0258A006CFFBF /* ViewController */,
 			);
+			name = SimpleNetworking;
 			path = "URL-Requests";
 			sourceTree = "<group>";
 		};
-		273DA1C41C7BF5CB0075A5D6 /* URL-RequestsTests */ = {
+		273DA1C41C7BF5CB0075A5D6 /* SimpleNetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
 				273DA1C51C7BF5CB0075A5D6 /* URL_RequestsTests.swift */,
 				273DA1C71C7BF5CB0075A5D6 /* Info.plist */,
 			);
+			name = SimpleNetworkingTests;
 			path = "URL-RequestsTests";
 			sourceTree = "<group>";
 		};
-		273DA1CF1C7BF5CB0075A5D6 /* URL-RequestsUITests */ = {
+		273DA1CF1C7BF5CB0075A5D6 /* SimpleNetworkingUITests */ = {
 			isa = PBXGroup;
 			children = (
 				273DA1D01C7BF5CB0075A5D6 /* URL_RequestsUITests.swift */,
 				273DA1D21C7BF5CB0075A5D6 /* Info.plist */,
 			);
+			name = SimpleNetworkingUITests;
 			path = "URL-RequestsUITests";
 			sourceTree = "<group>";
+		};
+		710D36D31CA0258A006CFFBF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				710D36D41CA0258A006CFFBF /* SimpleNetworkingManager.swift */,
+			);
+			name = Manager;
+			path = SimpleNetworking/Manager;
+			sourceTree = SOURCE_ROOT;
+		};
+		710D36D51CA0258A006CFFBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				710D36D61CA0258A006CFFBF /* AppDelegate.swift */,
+				710D36D71CA0258A006CFFBF /* Assets.xcassets */,
+				710D36D81CA0258A006CFFBF /* LaunchScreen.storyboard */,
+				710D36DA1CA0258A006CFFBF /* Main.storyboard */,
+				710D36DC1CA0258A006CFFBF /* Info.plist */,
+			);
+			name = Resources;
+			path = SimpleNetworking/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		710D36DD1CA0258A006CFFBF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				710D36DE1CA0258A006CFFBF /* FactoryViewController.swift */,
+				710D36DF1CA0258A006CFFBF /* MasterViewController.swift */,
+				710D36E01CA0258A006CFFBF /* MultipleRequestViewController.swift */,
+				710D36E11CA0258A006CFFBF /* SingleRequestViewController.swift */,
+			);
+			name = ViewController;
+			path = SimpleNetworking/ViewController;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		273DA1AA1C7BF5CB0075A5D6 /* URL-Requests */ = {
+		273DA1AA1C7BF5CB0075A5D6 /* SimpleNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 273DA1D51C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-Requests" */;
+			buildConfigurationList = 273DA1D51C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "SimpleNetworking" */;
 			buildPhases = (
 				273DA1A71C7BF5CB0075A5D6 /* Sources */,
 				273DA1A81C7BF5CB0075A5D6 /* Frameworks */,
@@ -152,14 +182,14 @@
 			);
 			dependencies = (
 			);
-			name = "URL-Requests";
+			name = SimpleNetworking;
 			productName = "URL-Requests";
-			productReference = 273DA1AB1C7BF5CB0075A5D6 /* URL-Requests.app */;
+			productReference = 273DA1AB1C7BF5CB0075A5D6 /* SimpleNetworking.app */;
 			productType = "com.apple.product-type.application";
 		};
-		273DA1C01C7BF5CB0075A5D6 /* URL-RequestsTests */ = {
+		273DA1C01C7BF5CB0075A5D6 /* SimpleNetworkingTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 273DA1D81C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-RequestsTests" */;
+			buildConfigurationList = 273DA1D81C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "SimpleNetworkingTest" */;
 			buildPhases = (
 				273DA1BD1C7BF5CB0075A5D6 /* Sources */,
 				273DA1BE1C7BF5CB0075A5D6 /* Frameworks */,
@@ -170,14 +200,14 @@
 			dependencies = (
 				273DA1C31C7BF5CB0075A5D6 /* PBXTargetDependency */,
 			);
-			name = "URL-RequestsTests";
+			name = SimpleNetworkingTest;
 			productName = "URL-RequestsTests";
-			productReference = 273DA1C11C7BF5CB0075A5D6 /* URL-RequestsTests.xctest */;
+			productReference = 273DA1C11C7BF5CB0075A5D6 /* SimpleNetworkingTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		273DA1CB1C7BF5CB0075A5D6 /* URL-RequestsUITests */ = {
+		273DA1CB1C7BF5CB0075A5D6 /* SimpleNetworkingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 273DA1DB1C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-RequestsUITests" */;
+			buildConfigurationList = 273DA1DB1C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "SimpleNetworkingUITests" */;
 			buildPhases = (
 				273DA1C81C7BF5CB0075A5D6 /* Sources */,
 				273DA1C91C7BF5CB0075A5D6 /* Frameworks */,
@@ -188,9 +218,9 @@
 			dependencies = (
 				273DA1CE1C7BF5CB0075A5D6 /* PBXTargetDependency */,
 			);
-			name = "URL-RequestsUITests";
+			name = SimpleNetworkingUITests;
 			productName = "URL-RequestsUITests";
-			productReference = 273DA1CC1C7BF5CB0075A5D6 /* URL-RequestsUITests.xctest */;
+			productReference = 273DA1CC1C7BF5CB0075A5D6 /* SimpleNetworkingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +246,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 273DA1A61C7BF5CB0075A5D6 /* Build configuration list for PBXProject "URL-Requests" */;
+			buildConfigurationList = 273DA1A61C7BF5CB0075A5D6 /* Build configuration list for PBXProject "SimpleNetworking" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +259,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				273DA1AA1C7BF5CB0075A5D6 /* URL-Requests */,
-				273DA1C01C7BF5CB0075A5D6 /* URL-RequestsTests */,
-				273DA1CB1C7BF5CB0075A5D6 /* URL-RequestsUITests */,
+				273DA1AA1C7BF5CB0075A5D6 /* SimpleNetworking */,
+				273DA1C01C7BF5CB0075A5D6 /* SimpleNetworkingTest */,
+				273DA1CB1C7BF5CB0075A5D6 /* SimpleNetworkingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,9 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273DA1BB1C7BF5CB0075A5D6 /* LaunchScreen.storyboard in Resources */,
-				273DA1B81C7BF5CB0075A5D6 /* Assets.xcassets in Resources */,
-				273DA1B61C7BF5CB0075A5D6 /* Main.storyboard in Resources */,
+				710D36E41CA0258A006CFFBF /* Assets.xcassets in Resources */,
+				710D36E61CA0258A006CFFBF /* Main.storyboard in Resources */,
+				710D36E51CA0258A006CFFBF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273DA1B11C7BF5CB0075A5D6 /* MasterViewController.swift in Sources */,
-				273DA1E11C7BF8BD0075A5D6 /* SingleRequestViewController.swift in Sources */,
-				277AD20A1C9F17B500196286 /* SimpleNetworkingManager.swift in Sources */,
-				278AFB511C87D38700358697 /* MultipleRequestViewController.swift in Sources */,
-				273DA1AF1C7BF5CB0075A5D6 /* AppDelegate.swift in Sources */,
-				277AD20C1C9F19D500196286 /* FactoryViewController.swift in Sources */,
+				710D36E91CA0258A006CFFBF /* MasterViewController.swift in Sources */,
+				710D36E31CA0258A006CFFBF /* AppDelegate.swift in Sources */,
+				710D36EA1CA0258A006CFFBF /* MultipleRequestViewController.swift in Sources */,
+				710D36E81CA0258A006CFFBF /* FactoryViewController.swift in Sources */,
+				710D36EB1CA0258A006CFFBF /* SingleRequestViewController.swift in Sources */,
+				710D36E21CA0258A006CFFBF /* SimpleNetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,31 +328,31 @@
 /* Begin PBXTargetDependency section */
 		273DA1C31C7BF5CB0075A5D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 273DA1AA1C7BF5CB0075A5D6 /* URL-Requests */;
+			target = 273DA1AA1C7BF5CB0075A5D6 /* SimpleNetworking */;
 			targetProxy = 273DA1C21C7BF5CB0075A5D6 /* PBXContainerItemProxy */;
 		};
 		273DA1CE1C7BF5CB0075A5D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 273DA1AA1C7BF5CB0075A5D6 /* URL-Requests */;
+			target = 273DA1AA1C7BF5CB0075A5D6 /* SimpleNetworking */;
 			targetProxy = 273DA1CD1C7BF5CB0075A5D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		273DA1B41C7BF5CB0075A5D6 /* Main.storyboard */ = {
+		710D36D81CA0258A006CFFBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				273DA1B51C7BF5CB0075A5D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		273DA1B91C7BF5CB0075A5D6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				273DA1BA1C7BF5CB0075A5D6 /* Base */,
+				710D36D91CA0258A006CFFBF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		710D36DA1CA0258A006CFFBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				710D36DB1CA0258A006CFFBF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,9 +443,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "URL-Requests/Info.plist";
+				INFOPLIST_FILE = SimpleNetworking/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "floundertech.test.URL-Requests";
+				PRODUCT_BUNDLE_IDENTIFIER = floundertech.test.SimpleNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 			};
@@ -425,9 +455,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "URL-Requests/Info.plist";
+				INFOPLIST_FILE = SimpleNetworking/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "floundertech.test.URL-Requests";
+				PRODUCT_BUNDLE_IDENTIFIER = floundertech.test.SimpleNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 			};
@@ -441,7 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "floundertech.test.URL-RequestsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URL-Requests.app/URL-Requests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleNetworking.app/SimpleNetworking";
 			};
 			name = Debug;
 		};
@@ -453,7 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "floundertech.test.URL-RequestsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URL-Requests.app/URL-Requests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleNetworking.app/SimpleNetworking";
 			};
 			name = Release;
 		};
@@ -484,7 +514,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		273DA1A61C7BF5CB0075A5D6 /* Build configuration list for PBXProject "URL-Requests" */ = {
+		273DA1A61C7BF5CB0075A5D6 /* Build configuration list for PBXProject "SimpleNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273DA1D31C7BF5CB0075A5D6 /* Debug */,
@@ -493,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		273DA1D51C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-Requests" */ = {
+		273DA1D51C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "SimpleNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273DA1D61C7BF5CB0075A5D6 /* Debug */,
@@ -502,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		273DA1D81C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-RequestsTests" */ = {
+		273DA1D81C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "SimpleNetworkingTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273DA1D91C7BF5CB0075A5D6 /* Debug */,
@@ -511,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		273DA1DB1C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "URL-RequestsUITests" */ = {
+		273DA1DB1C7BF5CB0075A5D6 /* Build configuration list for PBXNativeTarget "SimpleNetworkingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273DA1DC1C7BF5CB0075A5D6 /* Debug */,
