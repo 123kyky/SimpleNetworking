@@ -106,4 +106,16 @@ class SimpleNetworkingManager {
             return nil
         }
     }
+    
+    private func JSONFromDictionary(dictionary: NSDictionary) -> NSData? {
+        do {
+            let json = try NSJSONSerialization.dataWithJSONObject(dictionary, options: [])
+            print("Successful JSON data: \(json)")
+            
+            return json
+        } catch {
+            print("Error: Unable to create JSON from \(dictionary).")
+            return nil
+        }
+    }
 }
